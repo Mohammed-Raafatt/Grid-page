@@ -1,0 +1,488 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-rows: 400px 400px 400px 200px;
+
+  grid-template-areas:
+    "iphone iphone how how"
+    "brand  imac imac  popular"
+    "games  choice choice popular"
+    "connect much tv tv";
+}
+
+.home .iphone {
+  grid-area: iphone;
+  align-self: end;
+}
+.home .iphone .container-i {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.home .iphone .container-i .content {
+  width: 250px;
+}
+.home .iphone .container-i .content h2 {
+  font-size: 14px;
+  color: #9fa3a7;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+}
+.home .iphone .container-i .content h1 {
+  font-family: "Arvo", sans-serif;
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 20;
+}
+.home .iphone .container-i .content p {
+  color: #9fa3a7;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.home .iphone .container-i .pic {
+  width: 250px;
+  padding-right: 20px;
+}
+.home .iphone .container-i .pic img {
+  width: 100%;
+  height: 350px;
+}
+
+.home .how {
+  grid-area: how;
+  background-color: #f7f8f9;
+}
+.home .how .container-h {
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  padding-top: 40px;
+}
+.home .how .container-h h2 {
+  font-size: 14px;
+  color: #9fa3a7;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+}
+.home .how .container-h h1 {
+  font-family: "Arvo", sans-serif;
+  line-height: 60px;
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.home .how .container-h a {
+  color: #27b9c2;
+  font-family: sans-serif;
+}
+
+.home .brand {
+  grid-area: brand;
+  background-color: #f05638;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .brand .container-b {
+  width: 60%;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .brand .container-b .pic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home .brand .container-b img {
+  width: 320px;
+}
+.home .brand .container-b h1 {
+  margin: auto;
+  font-family: "Arvo", sans-serif;
+  line-height: 32px;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20;
+  color: white;
+}
+.home .brand .container-b a {
+  text-decoration: none;
+  color: #ffc80a;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.home .imac {
+  grid-area: imac;
+  position: relative;
+  overflow: hidden;
+}
+.home .imac .container-imac {
+  width: 100%;
+  display: flex;
+}
+.home .imac .container-imac .pic {
+  width: 30%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.home .imac .container-imac .pic h2 {
+  padding-top: 48px;
+  font-size: 13px;
+  color: #9fa3a7;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+.home .imac .container-imac .pic h1 {
+  font-family: "ARVO", sans-serif;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 22px;
+
+  width: 75%;
+
+  margin-top: 0px;
+  padding-bottom: 40px;
+}
+.home .imac .container-imac .pic img {
+  width: 460px;
+  position: absolute;
+  left: -29%;
+  bottom: 0;
+}
+.home .imac .container-imac .content {
+  width: 50%;
+}
+.home .imac .container-imac .content p {
+  padding-top: 40px;
+  line-height: 25px;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-right: 48px;
+  color: #9facc6;
+  width: 78%;
+  margin-bottom: 25px;
+}
+.home .imac .container-imac .content a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 12;
+  color: #27b9c2;
+}
+
+.home .popular {
+  grid-area: popular;
+  background-color: #8f76bc;
+}
+.home .popular .container-p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .popular .container-p .pic {
+  background-color: #8166b0;
+  text-align: center;
+  border-radius: 50%;
+}
+.home .popular .container-p .pic .flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.home .popular .container-p .pic .flag img {
+  width: 12px;
+  height: 12px;
+}
+.home .popular .container-p .pic .flag p {
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  color: white;
+  font-family: sans-serif;
+  background-color: #8f76bc;
+  padding: 3px 10px 3px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.home .popular .container-p .pic .m {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+.home .popular .container-p .pic img {
+  width: 250px;
+  margin-right: 7px;
+}
+.home .popular .container-p .content {
+  width: 100%;
+  text-align: center;
+}
+.home .popular .container-p .content h1 {
+  color: white;
+  font-family: "arvo", sans-serif;
+}
+.home .popular .container-p .content p {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 48px;
+}
+.home .popular .container-p .content a {
+  background-color: #ffc80a;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  font-family: sans-serif;
+  color: black;
+  margin-top: 30px;
+  padding: 20px 25px 20px 25px;
+  border-radius: 40px;
+}
+
+.home .games {
+  grid-area: games;
+  background-color: #f7f8f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .games .container-g {
+  width: 60%;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .games .container-g .pic {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.home .games .container-g img {
+  width: 200px;
+}
+.home .games .container-g h1 {
+  margin: auto;
+  font-family: "Arvo", sans-serif;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 20;
+  margin-top: 20px;
+}
+.home .games .container-g a {
+  text-decoration: none;
+  color: #27b9c2;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.home .choice {
+  grid-area: choice;
+  background-color: #93b6b7;
+  position: relative;
+  overflow: hidden;
+}
+.home .choice .container-c {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/4.png);
+  background-position: bottom;
+  background-size: 600px;
+  background-repeat: no-repeat;
+}
+.home .choice .container-c .bc {
+  position: absolute;
+  top: 20;
+  left: 30;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  background-color: #fa684f;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 5px;
+}
+.home .choice .container-c h1 {
+  margin-top: 40px;
+  width: 40%;
+  color: white;
+  font-family: "arvo", sans-serif;
+  font-size: 23px;
+  margin: 48px auto 40px;
+}
+.home .choice .container-c img {
+  width: 700px;
+  margin-left: -48px;
+}
+
+.home .connect {
+  grid-area: connect;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #38d5f4;
+  overflow: hidden;
+}
+.home .connect .container-t {
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  background-color: #27bac257;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .connect .container-t img {
+  width: 45px;
+  margin-bottom: 0px;
+}
+.home .connect .container-t h1 {
+  font-family: "Arvo", sans-serif;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  width: 70%;
+}
+
+.home .much {
+  grid-area: much;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8f9;
+  overflow: hidden;
+}
+.home .much .container-t {
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  background-color: #f7f8f9;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .much .container-t p {
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  background-color: #7bc424;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 5px;
+}
+.home .much .container-t h1 {
+  font-family: "ARVO", sans-serif;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 22px;
+  margin-top: 0px;
+  width: 90%;
+}
+.home .tv {
+  grid-area: tv;
+  overflow: hidden;
+  background-color: #2c2c2c;
+}
+.home .tv .container-tv {
+  width: 100%;
+  display: flex;
+}
+.home .tv .container-tv .pic {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .tv .container-tv .pic img {
+  width: 270px;
+  margin-right: 48px;
+  margin-top: -25px;
+}
+.home .tv .container-tv .content {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.home .tv .container-tv .content h1 {
+  font-family: "ARVO", sans-serif;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 22px;
+  padding-left: 20px;
+  width: 60%;
+  color: white;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 400px 400px 200px;
+
+    grid-template-areas:
+      "how how"
+      "iphone iphone"
+      "brand games"
+      "imac imac"
+      "connect popular"
+      "choice popular"
+      "much much"
+      "tv tv";
+  }
+}
